@@ -46,6 +46,15 @@ public class TelaPrincipal extends JFrame {
 				System.exit(NORMAL);
 			}
 		});
+		
+		JMenu mnEditar = new JMenu("Editar");
+		mnArquivo.add(mnEditar);
+		
+		JMenuItem mntmVisualizao = new JMenuItem("Visualiza\u00E7\u00E3o");
+		mnEditar.add(mntmVisualizao);
+		
+		JMenuItem mntmConfiguraes = new JMenuItem("Configura\u00E7\u00F5es");
+		mnEditar.add(mntmConfiguraes);
 		mnArquivo.add(mntmSair);
 		
 		JMenu mnEmprstimo = new JMenu("Empr\u00E9stimo");
@@ -168,7 +177,6 @@ public class TelaPrincipal extends JFrame {
 		contentPane.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 		
 		JLabel label = new JLabel("");
-		//label.setIcon(new ImageIcon("C:\\Users\\OdyCruz\\Desktop\\UNIASSELVI 2022-1\\[5] PROJETO ORIENTADO A OBJETOS\\AULA 10\\Biblioteca\\book.png"));
 		label.setIcon( new ImageIcon( Toolkit.getDefaultToolkit().getImage( getClass().getResource("resources/book.png") ) ) );
 		contentPane.add(label);
 	}
